@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Déborah Saphira - 1 aninho</title>
+  <meta name="description" content="Clique para abrir o convite." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Déborah Saphira - 1 aninho" />
+  <meta property="og:description" content="Clique para abrir o convite." />
+  <meta property="og:image" content="https://convitepremium.github.io/convites-premium-Deborah-Saphira/assets/preview.jpg" />
+  <meta property="og:image:secure_url" content="https://convitepremium.github.io/convites-premium-Deborah-Saphira/assets/preview.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1731" />
+  <meta property="og:image:height" content="909" />
+  <meta property="og:url" content="https://convitepremium.github.io/convites-premium-Deborah-Saphira/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#5b0b05" />
+
+  <link rel="preload" href="assets/preview.jpg" as="image" />
+  <link rel="preload" href="assets/principal.webp" as="image" />
+  <link rel="preload" href="assets/presentes.webp" as="image" />
+  <link rel="preload" href="assets/video.mp4" as="video" />
+
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#140703;font-family:Arial,Helvetica,sans-serif;color:#fff;touch-action:manipulation}
+    body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 15%,rgba(255,210,110,.18),transparent 38%),linear-gradient(180deg,#190703,#060201 75%);z-index:-3}
+    .screen{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#070201;transition:opacity .45s ease,visibility .45s ease}.hidden{opacity:0;visibility:hidden;pointer-events:none}
+    #start{z-index:30;background-image:linear-gradient(rgba(20,5,2,.30),rgba(20,5,2,.78)),url('assets/preview.jpg');background-size:cover;background-position:center}
+    .start-card{text-align:center;padding:34px 28px;width:min(92vw,480px);border:1px solid rgba(255,221,148,.30);border-radius:30px;background:rgba(20,6,2,.35);backdrop-filter:blur(8px);box-shadow:0 24px 80px rgba(0,0,0,.65)}
+    .tag{letter-spacing:.38em;color:#ffd986;font-size:12px;font-weight:800;margin-bottom:18px}.title{font-size:clamp(38px,10vw,70px);font-weight:900;line-height:.93;margin:0 0 12px;text-shadow:0 4px 20px rgba(0,0,0,.55)}.subtitle{font-size:18px;opacity:.94;margin:0 0 26px}.btn{border:0;border-radius:999px;padding:18px 34px;font-size:21px;font-weight:900;color:#1d0901;background:linear-gradient(135deg,#fff1b4,#ce8b1e);box-shadow:0 18px 48px rgba(220,154,38,.35);cursor:pointer}.btn.secondary{font-size:16px;padding:12px 20px;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.28);box-shadow:none}
+    #videoScreen{z-index:20;background:#000}.video{width:100vw;height:100dvh;object-fit:contain;background:#000}.video-actions{position:fixed;left:0;right:0;bottom:18px;z-index:22;display:flex;gap:10px;justify-content:center;align-items:center;padding:0 14px}.video-msg{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:22;width:min(88vw,420px);padding:22px;border-radius:22px;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.22);text-align:center;display:none}.video-msg.show{display:block}.video-msg p{margin:0 0 14px;line-height:1.35;color:#fff}
+    #main,#gift{z-index:10;background:#000}.stage{position:relative;height:100dvh;width:100vw;display:flex;align-items:center;justify-content:center;background:#000}.artWrap{position:relative;display:inline-block;line-height:0;max-width:100vw;max-height:100dvh}.art{max-width:100vw;max-height:100dvh;width:auto;height:auto;display:block;user-select:none;-webkit-user-drag:none}.hotspot{position:absolute;border:0;background:rgba(255,255,255,0);cursor:pointer;border-radius:18px}.hotspot.debug{background:rgba(0,255,120,.25);outline:2px solid rgba(0,255,120,.95)}
+    .closeX{position:absolute;right:14px;top:14px;width:48px;height:48px;border-radius:999px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:30px;line-height:48px;text-align:center;font-weight:300;cursor:pointer;z-index:14;box-shadow:0 6px 20px rgba(0,0,0,.3)}.closeX.debug{background:rgba(255,0,100,.28);outline:2px solid #ff4b9e}
+    .loader{position:fixed;inset:0;z-index:40;background:#120502;display:none;align-items:center;justify-content:center;text-align:center}.loader.show{display:flex}.spark{font-size:42px;animation:pulse 1.1s infinite alternate}.loader p{color:#f5d37b;font-weight:800;letter-spacing:.12em}@keyframes pulse{to{transform:scale(1.16);opacity:.65}}
+  </style>
+</head>
+<body>
+  <audio id="music" src="assets/musica.mp3" loop preload="auto"></audio>
+
+  <section id="start" class="screen">
+    <div class="start-card">
+      <div class="tag">CONVITE PREMIUM</div>
+      <h1 class="title">Déborah Saphira</h1>
+      <p class="subtitle">Toque para iniciar a experiência</p>
+      <button id="startBtn" class="btn">Iniciar convite</button>
+    </div>
+  </section>
+
+  <section id="videoScreen" class="screen hidden">
+    <video id="introVideo" class="video" src="assets/video.mp4" playsinline webkit-playsinline preload="metadata"></video>
+    <div id="videoMsg" class="video-msg"><p>Se a abertura não iniciar automaticamente neste celular, toque no botão abaixo.</p><button id="retryBtn" class="btn">Reproduzir abertura</button></div>
+    <div class="video-actions"><button id="skipBtn" class="btn secondary">Pular abertura</button></div>
+  </section>
+
+  <section id="main" class="screen hidden">
+    <div class="stage"><div class="artWrap" id="mainWrap"><img id="mainImg" class="art" src="assets/principal.webp" alt="Convite Déborah Saphira">
+      <button class="hotspot" id="btnWhatsapp" aria-label="Confirmar presença"></button>
+      <button class="hotspot" id="btnMaps" aria-label="Localização"></button>
+      <button class="hotspot" id="btnGifts" aria-label="Sugestões de presentes"></button>
+    </div></div>
+  </section>
+
+  <section id="gift" class="screen hidden">
+    <div class="stage"><div class="artWrap" id="giftWrap"><img class="art" src="assets/presentes.webp" alt="Sugestões de presentes"><button id="backBtn" class="closeX" aria-label="Voltar">×</button></div></div>
+  </section>
+
+  <div id="loader" class="loader"><div><div class="spark">✨</div><p>PREPARANDO CONVITE</p></div></div>
+
+  <script>
+    const DEBUG = new URLSearchParams(location.search).has('debug');
+    const $ = id => document.getElementById(id);
+    const start=$('start'), videoScreen=$('videoScreen'), main=$('main'), gift=$('gift'), music=$('music'), video=$('introVideo'), loader=$('loader'), videoMsg=$('videoMsg');
+    const whatsapp = 'https://wa.me/559891618760?text=' + encodeURIComponent('Olá! Confirmo minha presença no aniversário da Déborah Saphira.');
+    const maps = 'https://share.google/PkyFPbDubpXlUHdnX';
+
+    function show(el){[start,videoScreen,main,gift].forEach(s=>s.classList.add('hidden')); el.classList.remove('hidden')}
+    async function goFullscreen(){try{ if(document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen(); }catch(e){}}
+    async function startMusic(){try{ music.volume=.30; await music.play(); }catch(e){}}
+    async function playVideo(){
+      videoMsg.classList.remove('show');
+      try{ video.currentTime=0; await video.play(); }catch(e){ videoMsg.classList.add('show'); }
+      setTimeout(()=>{ if(video.paused && !video.ended) videoMsg.classList.add('show'); }, 2200);
+    }
+
+    $('startBtn').onclick = async () => {
+      loader.classList.add('show');
+      await goFullscreen();
+      await startMusic();
+      loader.classList.remove('show');
+      show(videoScreen);
+      playVideo();
+    };
+    $('retryBtn').onclick=()=>playVideo();
+    video.addEventListener('ended',()=>show(main));
+    video.addEventListener('error',()=>videoMsg.classList.add('show'));
+    $('skipBtn').onclick=()=>{video.pause(); show(main)};
+    $('btnWhatsapp').onclick=()=> window.open(whatsapp,'_blank');
+    $('btnMaps').onclick=()=> window.open(maps,'_blank');
+    $('btnGifts').onclick=()=> show(gift);
+    $('backBtn').onclick=()=> show(main);
+
+    function placeHotspots(){
+      const spots=[
+        ['btnWhatsapp', 15, 75, 22, 9],
+        ['btnMaps', 39, 75, 22, 9],
+        ['btnGifts', 63, 75, 24, 9]
+      ];
+      spots.forEach(([id,x,y,w,h])=>{const el=$(id); el.style.left=x+'%';el.style.top=y+'%';el.style.width=w+'%';el.style.height=h+'%'; if(DEBUG) el.classList.add('debug')});
+      if(DEBUG) $('backBtn').classList.add('debug');
+    }
+    window.addEventListener('load', placeHotspots);
+    window.addEventListener('resize', placeHotspots);
+    setTimeout(placeHotspots,500);
+  </script>
+</body>
+</html>
