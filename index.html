@@ -104,9 +104,9 @@
 
     function placeHotspots(){
       const spots=[
-        ['btnWhatsapp', 15, 75, 22, 9],
-        ['btnMaps', 39, 75, 22, 9],
-        ['btnGifts', 63, 75, 24, 9]
+        ['btnWhatsapp', 16, 72.5, 22, 11],
+        ['btnMaps', 39, 72.5, 22, 11],
+        ['btnGifts', 62.5, 72.5, 24, 11]
       ];
       spots.forEach(([id,x,y,w,h])=>{const el=$(id); el.style.left=x+'%';el.style.top=y+'%';el.style.width=w+'%';el.style.height=h+'%'; if(DEBUG) el.classList.add('debug')});
       if(DEBUG) $('backBtn').classList.add('debug');
